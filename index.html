@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="pageLeft">
+        <div class="logoBackground">
+            <img class="logo" src="images/Penguin.webp" alt="Logo image of a penguin">
+            <h1 class="businessName">Penguin</h1>
+        </div>
+    </div>
+    <div class="pageRight">
+        <div class="head">
+            <h1>Get started with penguin by creating an account</h1>
+            <h2>It all starts here</h2>
+        </div>
+        <div class="form">
+            <p>Fill in your details below</p>
+            <form action="" method="get" id="form1">
+                <div class="formLeft">
+                    <div class="form-name">
+                        <label for="name">Name*</label>
+                        <input type="text" id="name" placeholder="name" pattern="^[^0-9]+$" required>
+                    </div>
+                    <div class="form-email">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" placeholder="email@gmail.com" required>
+                    </div>
+                    <div class="form-password">
+                        <label for="password">Password*</label>
+                        <input type="password" id="password" placeholder="password" required>
+                    </div>
+                </div>
+                <div class="formRight">
+                    <div class="form-surname">
+                        <label for="surname">Last Name*</label>
+                        <input type="text" id="surname" placeholder="surname" pattern="^[^0-9]+$" required>
+                    </div>
+                    <div class="form-number">
+                        <label for="number">Phone Number*</label>
+                        <input type="number" id="number" placeholder="e.g.01437947824" required>
+                    </div>
+                    <div class="form-passwordConfirm">
+                        <label for="passwordConfirm">Confirm Password*</label>
+                        <input type="password" id="passwordConfirm" placeholder="password" onkeyup="validate_password()" required>
+                    </div>
+                </div>
+            </form>
+            <span id="wrong_pass_alert"></span>
+        </div>
+        <div class="foot">
+            <button type="submit" id="submit" form="form1" value="submit">Create an Account</button>
+            <p>Already have an account? <a href="url">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>

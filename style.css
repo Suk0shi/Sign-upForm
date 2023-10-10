@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'DeltaGothicOne';
+    src: url(font/Dela_Gothic_One/DelaGothicOne-Regular.ttf);
+}
+
+:root {
+    --greenColor: rgb(45, 104, 32);
+}
+
+
+*{
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+.logo {
+    width: 100px;
+
+}
+
+.businessName {
+    font-family: 'DeltaGothicOne';
+    color: white;
+    font-size: 50px;
+}
+
+h1,h2,p {
+    margin: 0;
+}
+
+.pageLeft {
+    background-image: url(images/simon-fitall-tvleqH3p1os-unsplash.jpg);
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+    flex: 1;
+}
+
+.pageRight {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.logoBackground {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.form {
+    background-color: white;
+    flex: 1;
+    padding: 30px;
+    box-shadow: inset 0px -6px 0px 0px rgba(0, 0, 0, 0.1);
+    color: rgb(60, 60, 60);
+}
+
+.form p {
+    padding-bottom: 20px;
+}
+
+form {
+    display: flex;
+    gap: 30px;
+}
+
+.formLeft, .formRight {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-name,
+.form-email,
+.form-password,
+.form-surname,
+.form-number,
+.form-passwordConfirm {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    font: 1em sans-serif;
+    width: 250px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+input.error {
+    border-color: red;
+}
+
+*:focus {
+    outline: none;
+}
+
+input:focus {
+    border-color: rgb(25, 147, 223);
+    border-width: 2px;
+}
+.head,
+.foot {
+    background-color: rgb(236, 236, 236);
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+}
+
+.head {
+    justify-content: end;
+}
+
+.foot {
+    align-items: start;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--greenColor);
+    color: white;
+    font-weight: 1000;
+    border-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--greenColor);
+}
